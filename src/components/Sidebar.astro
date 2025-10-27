@@ -1,0 +1,29 @@
+---
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+
+const buttonClasses = cn(buttonVariants(), "-rotate-1");
+---
+
+<div class="flex flex-row flex-wrap gap-3 md:flex-col md:gap-5">
+  <a
+    href="/"
+    class={buttonClasses}
+    >Home</a
+  >
+  <a
+    href="/nodes"
+    class={buttonClasses}
+    >My Nodes
+  </a>
+  <a
+    href="/map"
+    class={buttonClasses}
+    >Map</a
+  >
+  <a
+    href="/resources"
+    class={buttonClasses}
+    >Resources</a
+  >
+</div>

@@ -1,0 +1,45 @@
+---
+import BlockQuote from "@/components/ui/BlockQuote.astro";
+import MeshtasticLogo from "@/images/meshtastic.svg";
+import Layout from "@/layouts/BaseLayout.astro";
+---
+
+<Layout
+  title="CB's Mesh"
+  description="Mesh around and find out...">
+  <p class="text-2xl">
+    This is a tiny website with information about my <a
+      href="https://meshtastic.org/">Meshtastic</a
+    > setup in Philly.
+  </p>
+  <p>What is meshtastic?</p>
+  <BlockQuote className="flex flex-col items-start gap-3 md:flex-row md:items-center">
+    <div>
+      <MeshtasticLogo class="max-h-24 w-auto flex-shrink" />
+    </div>
+    <div>
+      Meshtastic is a project that enables you to use inexpensive LoRa radios as
+      a long range off-grid communication platform in areas without existing or
+      reliable communications infrastructure. This project is 100% community
+      driven and open source!
+    </div>
+  </BlockQuote>
+  <p>
+    I'm connected to <a href="https://phillymesh.net/">Philly Mesh!</a> They run
+    several Meshtastic nodes in the Greater Philadelphia area. They also run <a
+      href="https://discord.gg/MWWbAkRR9v">an excellent Discord server.</a
+    > You should join it and chat with other nerds like me!
+  </p>
+</Layout>
+
+<style>
+  @reference "tailwindcss";
+
+  p {
+    padding: 1rem 0;
+  }
+  a {
+    @apply after:content-[ "_↗"];
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,44 @@
+---
+import Layout from "@/layouts/BaseLayout.astro";
+---
+
+<Layout
+  title="Resources"
+  description="">
+  <div class="grid h-full w-full place-content-center">
+    <div class="text-center">
+      <ul>
+        <li>
+          <a href="https://meshtastic.org/">Meshtasic project homepage</a>
+        </li>
+        <li><a href="https://phillymesh.net/">PhillyMesh</a></li>
+        <li>
+          <a href="https://meshtastic.org/docs/software/site-planner/">
+            Meshtastic Site Planner</a
+          >
+        </li>
+        <li><a href="https://muzi.works/">musi.works</a></li>
+        <li>
+          <a href="https://www.etsy.com/shop/PeakMesh">PeakMesh</a> on Etsy
+        </li>
+      </ul>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  @reference "tailwindcss";
+
+  a {
+    @apply after:content-[ "_↗"];
+    text-decoration: underline;
+  }
+
+  ul {
+    @apply text-xl;
+  }
+
+  ul li {
+    @apply my-10;
+  }
+</style>

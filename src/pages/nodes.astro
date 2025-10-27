@@ -1,0 +1,11 @@
+---
+import MeshNodeCard from "@/components/MeshNodeCard.astro";
+import { nodes } from "@/data/nodes";
+import Layout from "@/layouts/BaseLayout.astro";
+---
+
+<Layout title="Nodes">
+  <div class="flex flex-col gap-5">
+    {nodes.map((node) => <MeshNodeCard node={node} />)}
+  </div>
+</Layout>
